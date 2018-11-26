@@ -1,0 +1,157 @@
+.section {
+    padding: 7rem 0;
+    
+    @include respond(small) {
+        padding: 4rem 0 5rem;
+    }
+    
+    &-hero {
+        background-color: $color-white;
+        padding: 0 0 3rem;
+        
+        &__grid {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            
+            @include respond(medium) {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+        }
+        
+        .introduction {
+            flex: 0 0 45%;
+            
+            @include respond(medium) {
+                max-width: 50rem;
+                padding: 3rem 0 1.5rem;
+            }
+        }
+        
+        .illustration--box {
+            flex: 0 0 55%;
+            
+            @include respond(medium) {
+                margin-left: -2rem;
+            }
+        }
+    }
+    
+    &-list {
+        background-color: $color-primary-quite;
+        
+        .posts {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .post {
+            flex: 1 1 30%;
+            padding: 1.5rem;
+            
+            @include respond(smaller) {
+                flex: 1 1 100%;
+                padding: 1rem 0;
+            }
+            
+            &__video-box {
+                background-color: $color-secondary;
+                height: 20rem;
+                width: 100%;
+            }
+            
+            &__details {
+                background-color: $color-white;
+                padding: 2rem 2.3rem 2.5rem;
+                
+                .username {
+                    font-size: 1.6rem;
+                    margin-bottom: 1rem;
+                    text-transform: lowercase;
+                }
+                
+                .caption {
+                    color: $color-dark;
+                }
+                
+                .date-posted {
+                    color: $color-dark-quite;
+                    display: block;
+                    font-size: 1.1rem;
+                    font-weight: 400;
+                    margin-top: 1.5rem;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+    
+    &-how {
+        background-color: $color-white;
+        
+        .steps {
+            align-items: flex-start;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 3rem 0 4rem;
+            
+            @include respond(medium) {
+                align-items: center;
+                flex-direction: column;
+                margin: 1rem 0 4rem;
+            }
+        }
+        
+        .step {
+            align-items: center;
+            display: flex;
+            flex: 1 1 30%;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding: 0 4rem;
+            
+            @include respond(medium) {
+                max-width: 35rem;
+                
+                &:not(:last-child) {
+                    margin-bottom: 1rem;
+                }
+            }
+            
+            @include respond(smaller) {
+                padding: 0 2rem;
+            }
+        }
+        
+        .illustration-box {
+            align-items: flex-end;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            height: 9rem;
+            width: 9rem;
+            
+            @include respond(smaller) {
+                margin-bottom: 1rem;
+            }
+            
+            .illustration {
+                
+                &.small {
+                    height: 7rem;
+                    width: auto;
+                }
+            }
+        }
+    }
+    
+    &-cta {
+        background-color: $color-primary-quite;
+        
+        .shrink {
+            padding: 0 27rem;
+        }
+    }
+}

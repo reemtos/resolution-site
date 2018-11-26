@@ -1,0 +1,49 @@
+.footer {
+    background-color: $color-dark;
+    padding: 7rem 0;
+    
+    .logo {
+        color: $color-white;
+        margin-bottom: 0.8rem;
+    }
+    
+    .paragraph {
+        color: $color-white;
+    }
+    
+    .grid {
+        align-items: flex-end;
+        display: flex;
+        justify-content: space-between;
+        
+        @include respond(small) {
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        
+        &__left {
+            
+            @include respond(small) {
+                margin-bottom: 3rem;
+            }
+        }
+        
+        &__right {
+            
+        }
+    }
+    
+    .icon {
+        color: red;
+        margin: 0 0.3rem;
+    }
+    
+    .link {
+        border-bottom: 1px solid $color-white-quite;
+        color: $color-white-quite;
+        display: inline-block;
+        padding-bottom: 0.1rem;
+        text-decoration: none;
+    }
+}

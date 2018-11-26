@@ -1,0 +1,12 @@
+.container {
+    margin: 0 auto;
+    max-width: 96rem;
+    
+    @include respond(largest) {
+        padding: 0 2rem;
+    }
+    
+    &.mini {
+        max-width: 40rem;
+    }
+}
