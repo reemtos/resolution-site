@@ -1,0 +1,15 @@
+.button {
+    background-color: $color-primary;
+    border: none;
+    border-radius: 0.5rem;
+    color: $color-white;
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 1.5rem 2rem;
+    text-decoration: none;
+    transition: background-color 1s ease;
+    
+    &:hover {
+        background-color: $color-primary-deep;
+    }
+}

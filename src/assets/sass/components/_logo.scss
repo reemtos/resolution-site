@@ -1,0 +1,10 @@
+.logo {
+    color: $color-black;
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: 700;
+    
+    &--icon {
+        color: $color-primary;
+    }
+}
