@@ -51,13 +51,25 @@ const posts = [
     datePosted: 'nov 13, 2019',
     id: 9,
     resolution: 'My #resolutions2019 The goal is to be better, do better and go harder.',
-    username: 'reemtos'
+    username: '6bops'
   },
   {
     datePosted: 'nov 13, 2019',
     id: 10,
     resolution: 'My #resolutions2019 The goal is to be better, do better and go harder.',
-    username: 'reemtos'
+    username: '_remiilekun'
+  },
+  {
+    datePosted: 'nov 13, 2019',
+    id: 11,
+    resolution: 'My #resolutions2019 The goal is to be better, do better and go harder.',
+    username: 'johnnel'
+  },
+  {
+    datePosted: 'nov 13, 2019',
+    id: 12,
+    resolution: 'My #resolutions2019 The goal is to be better, do better and go harder.',
+    username: 'ramshodeen'
   }
 ]
 
